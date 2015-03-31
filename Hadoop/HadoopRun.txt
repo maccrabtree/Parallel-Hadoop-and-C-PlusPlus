@@ -1,0 +1,124 @@
+Script started on Mon Apr 28 16:38:09 2014
+px1% bash
+bash-3.2$ hadoop fs -rm interm.dat
+Deleted hdfs://px1.cs.ohiou.edu/user/mcrabtre/interm.dat
+bash-3.2$ hadoop fs -rmr output
+Deleted hdfs://px1.cs.ohiou.edu/user/mcrabtre/output
+bash-3.2$ hadoop jar movie/movie.jar movie.Movie rev/user_reviews.dat input1 output
+14/04/28 16:38:52 INFO input.FileInputFormat: Total input paths to process : 1
+14/04/28 16:38:52 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/04/28 16:38:52 WARN snappy.LoadSnappy: Snappy native library not loaded
+14/04/28 16:38:52 INFO mapred.JobClient: Running job: job_201404281427_0023
+14/04/28 16:38:53 INFO mapred.JobClient:  map 0% reduce 0%
+14/04/28 16:39:05 INFO mapred.JobClient:  map 19% reduce 0%
+14/04/28 16:39:06 INFO mapred.JobClient:  map 79% reduce 0%
+14/04/28 16:39:07 INFO mapred.JobClient:  map 100% reduce 0%
+14/04/28 16:39:15 INFO mapred.JobClient:  map 100% reduce 33%
+14/04/28 16:39:17 INFO mapred.JobClient:  map 100% reduce 100%
+14/04/28 16:39:18 INFO mapred.JobClient: Job complete: job_201404281427_0023
+14/04/28 16:39:18 INFO mapred.JobClient: Counters: 27
+14/04/28 16:39:18 INFO mapred.JobClient:   Job Counters 
+14/04/28 16:39:18 INFO mapred.JobClient:     Launched reduce tasks=2
+14/04/28 16:39:18 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=41820
+14/04/28 16:39:18 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+14/04/28 16:39:18 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+14/04/28 16:39:18 INFO mapred.JobClient:     Rack-local map tasks=2
+14/04/28 16:39:18 INFO mapred.JobClient:     Launched map tasks=4
+14/04/28 16:39:18 INFO mapred.JobClient:     Data-local map tasks=2
+14/04/28 16:39:18 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=20070
+14/04/28 16:39:18 INFO mapred.JobClient:   File Output Format Counters 
+14/04/28 16:39:18 INFO mapred.JobClient:     Bytes Written=575183
+14/04/28 16:39:18 INFO mapred.JobClient:   FileSystemCounters
+14/04/28 16:39:18 INFO mapred.JobClient:     FILE_BYTES_READ=929948
+14/04/28 16:39:18 INFO mapred.JobClient:     HDFS_BYTES_READ=265118671
+14/04/28 16:39:18 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=2181696
+14/04/28 16:39:18 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=575183
+14/04/28 16:39:18 INFO mapred.JobClient:   File Input Format Counters 
+14/04/28 16:39:18 INFO mapred.JobClient:     Bytes Read=265117923
+14/04/28 16:39:18 INFO mapred.JobClient:   Map-Reduce Framework
+14/04/28 16:39:18 INFO mapred.JobClient:     Map output materialized bytes=929984
+14/04/28 16:39:18 INFO mapred.JobClient:     Map input records=10000054
+14/04/28 16:39:18 INFO mapred.JobClient:     Reduce shuffle bytes=929984
+14/04/28 16:39:18 INFO mapred.JobClient:     Spilled Records=161738
+14/04/28 16:39:18 INFO mapred.JobClient:     Map output bytes=768198
+14/04/28 16:39:18 INFO mapred.JobClient:     Total committed heap usage (bytes)=978583552
+14/04/28 16:39:18 INFO mapred.JobClient:     Combine input records=0
+14/04/28 16:39:18 INFO mapred.JobClient:     SPLIT_RAW_BYTES=484
+14/04/28 16:39:18 INFO mapred.JobClient:     Reduce input records=80869
+14/04/28 16:39:18 INFO mapred.JobClient:     Reduce input groups=44755
+14/04/28 16:39:18 INFO mapred.JobClient:     Combine output records=0
+14/04/28 16:39:18 INFO mapred.JobClient:     Reduce output records=44755
+14/04/28 16:39:18 INFO mapred.JobClient:     Map output records=80869
+14/04/28 16:39:18 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+14/04/28 16:39:18 INFO input.FileInputFormat: Total input paths to process : 1
+14/04/28 16:39:18 INFO mapred.JobClient: Running job: job_201404281427_0024
+14/04/28 16:39:19 INFO mapred.JobClient:  map 0% reduce 0%
+14/04/28 16:39:30 INFO mapred.JobClient:  map 8% reduce 0%
+14/04/28 16:39:32 INFO mapred.JobClient:  map 37% reduce 0%
+14/04/28 16:39:34 INFO mapred.JobClient:  map 42% reduce 0%
+14/04/28 16:39:35 INFO mapred.JobClient:  map 60% reduce 0%
+14/04/28 16:39:37 INFO mapred.JobClient:  map 68% reduce 0%
+14/04/28 16:39:38 INFO mapred.JobClient:  map 77% reduce 0%
+14/04/28 16:39:40 INFO mapred.JobClient:  map 82% reduce 0%
+14/04/28 16:39:41 INFO mapred.JobClient:  map 91% reduce 0%
+14/04/28 16:39:42 INFO mapred.JobClient:  map 93% reduce 0%
+14/04/28 16:39:44 INFO mapred.JobClient:  map 100% reduce 0%
+14/04/28 16:39:45 INFO mapred.JobClient:  map 100% reduce 16%
+14/04/28 16:39:53 INFO mapred.JobClient:  map 100% reduce 53%
+14/04/28 16:39:54 INFO mapred.JobClient:  map 100% reduce 92%
+14/04/28 16:39:55 INFO mapred.JobClient:  map 100% reduce 97%
+14/04/28 16:39:56 INFO mapred.JobClient:  map 100% reduce 100%
+14/04/28 16:39:57 INFO mapred.JobClient: Job complete: job_201404281427_0024
+14/04/28 16:39:57 INFO mapred.JobClient: Counters: 27
+14/04/28 16:39:57 INFO mapred.JobClient:   Job Counters 
+14/04/28 16:39:57 INFO mapred.JobClient:     Launched reduce tasks=2
+14/04/28 16:39:57 INFO mapred.JobClient:     SLOTS_MILLIS_MAPS=77513
+14/04/28 16:39:57 INFO mapred.JobClient:     Total time spent by all reduces waiting after reserving slots (ms)=0
+14/04/28 16:39:57 INFO mapred.JobClient:     Total time spent by all maps waiting after reserving slots (ms)=0
+14/04/28 16:39:57 INFO mapred.JobClient:     Rack-local map tasks=2
+14/04/28 16:39:57 INFO mapred.JobClient:     Launched map tasks=4
+14/04/28 16:39:57 INFO mapred.JobClient:     Data-local map tasks=2
+14/04/28 16:39:57 INFO mapred.JobClient:     SLOTS_MILLIS_REDUCES=37458
+14/04/28 16:39:57 INFO mapred.JobClient:   File Output Format Counters 
+14/04/28 16:39:57 INFO mapred.JobClient:     Bytes Written=241000
+14/04/28 16:39:57 INFO mapred.JobClient:   FileSystemCounters
+14/04/28 16:39:57 INFO mapred.JobClient:     FILE_BYTES_READ=226227846
+14/04/28 16:39:57 INFO mapred.JobClient:     HDFS_BYTES_READ=267419315
+14/04/28 16:39:57 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=339584657
+14/04/28 16:39:57 INFO mapred.JobClient:     HDFS_BYTES_WRITTEN=241000
+14/04/28 16:39:57 INFO mapred.JobClient:   File Input Format Counters 
+14/04/28 16:39:57 INFO mapred.JobClient:     Bytes Read=265117923
+14/04/28 16:39:57 INFO mapred.JobClient:   Map-Reduce Framework
+14/04/28 16:39:57 INFO mapred.JobClient:     Map output materialized bytes=113087947
+14/04/28 16:39:57 INFO mapred.JobClient:     Map input records=10000054
+14/04/28 16:39:57 INFO mapred.JobClient:     Reduce shuffle bytes=113087947
+14/04/28 16:39:57 INFO mapred.JobClient:     Spilled Records=24809370
+14/04/28 16:39:57 INFO mapred.JobClient:     Map output bytes=96548319
+14/04/28 16:39:57 INFO mapred.JobClient:     Total committed heap usage (bytes)=1044971520
+14/04/28 16:39:57 INFO mapred.JobClient:     Combine input records=0
+14/04/28 16:39:57 INFO mapred.JobClient:     SPLIT_RAW_BYTES=484
+14/04/28 16:39:57 INFO mapred.JobClient:     Reduce input records=8269790
+14/04/28 16:39:57 INFO mapred.JobClient:     Reduce input groups=10657
+14/04/28 16:39:57 INFO mapred.JobClient:     Combine output records=0
+14/04/28 16:39:57 INFO mapred.JobClient:     Reduce output records=10657
+14/04/28 16:39:57 INFO mapred.JobClient:     Map output records=8269790
+bash-3.2$ hadoop fs -cat output/part* > output.dat
+bash-3.2$ a.out output.dat ../movie/movies.dat 15
+1.)Fighting Elegy (Kenka erejii) (1966) 124.167
+2.)Sun Alley (Sonnenallee) (1999) 119.375
+3.)I'm Starting From Three (Ricomincio da Tre) (1981) 115.354
+4.)Constantine's Sword (2007) 112.688
+5.)More (1998) 111.487
+6.)Ladrones (2007) 110.25
+7.)Satan's Tango (Sátántangó) (1994) 109.688
+8.)Shadows of Forgotten Ancestors (1964) 109
+9.)Hellhounds on My Trail (1999) 107.5
+10.)Life of Oharu, The (Saikaku ichidai onna) (1952) 105.653
+11.)Tokyo! (2008) 105.188
+12.)Man Who Planted Trees, The (Homme qui plantait des arbres, L') (1987) 104.134
+13.)Crows Zero (Kurôzu zero) (2007) 101.719
+14.)Only Yesterday (Omohide poro poro) (1991) 101.646
+15.)Legend of Leigh Bowery, The (2002) 101.531
+bash-3.2$ exit
+px1% ^D
+script done on Mon Apr 28 16:40:37 2014
